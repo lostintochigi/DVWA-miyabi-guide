@@ -9,6 +9,7 @@ Now back to business, there are a few things that you need to keep in mind when 
 1. The container environment in use is Singularity NOT Docker.
 2. Network Args - The default Apache server config inside the container is set to PORT 80.
 3. Running the MariaDB container.
+4. The containers currently only work on miyabi-c node NOT the miyabi-g because of amd64/arm64 architecture issues.
 
 There are two solutions to this issue:
 
