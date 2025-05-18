@@ -93,10 +93,10 @@ From: docker.io/library/mariadb:10
     mysqld
 ```
 
-Now use this `.def` file to create a MariaDB `.sif` container:
+Now use this `.def` file to create a MariaDB `.sif` container. NOTE This command ONLY works when your home directory is set to /home/'username' NOT when it's lab's wworkspace /work/gj26/:
 
 ```bash
-singularity build mariadb.sif mariadb.def
+singularity build --fakeroot mariadb.sif mariadb.def
 ```
 
 
